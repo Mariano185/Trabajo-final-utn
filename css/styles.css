@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundBlue: rgb(24, 28, 48);
+  --beige: rgb(230, 221, 196);
+  --grey: rgb(128 128 128);
+  --green: rgb(103, 137, 131);
+
+  /* SVG COLORS */
+
+  --blue: rgb(73, 85, 121);
+  --cream: rgb(240, 233, 210);
+
+  /* TEXT */
+  --white: #fff;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--backgroundBlue);
+  font-family: "Karla", sans-serif;
+  /* Weights: 
+  400 500 700 */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+nav a {
+  background-color: var(--beige);
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  width: 300px;
+}
+
+.btn {
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+.btn-transition:active {
+  transform: translate(1%, 1%);
+}
+
+.header {
+  background-image: url(../assets/images/codigo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: 700;
+  padding: 250px 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 5px 5px 10px black;
+}
+
+.main-index h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 250px 0;
+}
+
+.box {
+  width: 350px;
+  background-color: var(--beige);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box-img img {
+  width: 100%;
+}
+
+.box p {
+  font-size: 1.1em;
+  margin: 30px 10px;
+  text-align: left;
+}
+
+.box_button {
+  display: inline-block;
+  margin: 30px auto;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: rgb(24, 28, 48);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+  border-radius: 15px;
+  color: var(--beige);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  background-color: var(--green);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-left img {
+  width: 30%;
+  margin: 50px 0;
+}
+
+.footer-left p {
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+/* START STYLES HISTORIA.HTML */
+
+.main-historia {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 200px 50px;
+}
+
+/* ESTILOS GENERALES PARA TODOS LOS ARTICLES */
+
+.article {
+  display: flex;
+  padding: 0 40px;
+}
+
+.article h2 {
+  font-size: 2em;
+  width: 50%;
+  text-align: center;
+  color: var(--white);
+}
+
+.article p {
+  font-size: 1.1em;
+  width: 50%;
+  color: var(--beige);
+}
+
+/* ESTILOS ESPECIALES PARA CADA ARTICLE */
+
+.article-2 h2 {
+  order: 2;
+}
+
+.article-3 h2 {
+  width: 20%;
+}
+
+.article-3 p {
+  width: 70%;
+}
+
+/* ESTILOS PARA EL ARTICLE DE VIDEO */
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container h2 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.video {
+  margin-top: 0;
+}
+
+.controls {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 700px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: var(--grey);
+}
+
+.play,
+.pause {
+  padding: 5px 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.time {
+  align-self: center;
+}
+
+/* END STYLES HISTORIA.HTML */
+
+/* START STYLES JUEGO.HTML */
+
+.main-juego {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-juego h2 {
+  text-align: center;
+  color: var(--white);
+  font-size: 2.5em;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictures,
+.boxes-game {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.box-game {
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  padding: 200px 0;
+  background-color: var(--grey);
+  color: var(--beige);
+  margin-bottom: 50px;
+  border: 2px solid var(--grey);
+}
+
+.box-game:hover {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.reset {
+  display: inline-block;
+  padding: 10px 60px;
+  text-decoration: none;
+  margin: 50px 550px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  color: black;
+  background-color: var(--beige);
+}
+
+/* END STYLES JUEGO.HTML */
