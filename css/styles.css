@@ -187,9 +187,10 @@ nav a {
 /* ESTILOS PARA EL ARTICLE DE VIDEO */
 
 .video-container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   width: 50%;
+  min-width: 700px;
   margin: 0 auto;
   margin-top: 100px;
   justify-content: center;
@@ -199,20 +200,24 @@ nav a {
 .video-container h2 {
   color: var(--white);
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.video {
-  margin-top: 0;
+.video,
+.bar,
+.video-container h2 {
+  width: 100%;
+  min-width: 700px;
 }
 
-.controls {
+.bar {
+  position: relative;
   display: flex;
   align-content: center;
   justify-content: space-between;
-  width: 700px;
   height: 50px;
   padding: 0 20px;
-  background-color: var(--grey);
+  top: -50px;
 }
 
 .play,
@@ -221,12 +226,29 @@ nav a {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 15px;
-  border: none;
 }
 
 .time {
   align-self: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
+
+.progress {
+  position: relative;
+  top: -55px;
+  width: 100%;
+  height: 20px;
+  background-color: var(--grey);
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: var(--beige);
+}
+
+
 
 /* END STYLES HISTORIA.HTML */
 
