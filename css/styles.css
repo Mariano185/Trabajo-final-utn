@@ -26,16 +26,39 @@ body {
   /* Weights: 
   400 500 700 */
 }
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 30px;
 }
 
-nav a {
-  background-color: var(--beige);
-  text-decoration: none;
-  color: black;
+.svg {
+  width: 100px;
+  height: 100px;
+}
+
+.svg-exterior {
+  animation-name: svg;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.svg-interior {
+  animation-name: svg;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes svg {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .buttons {
@@ -46,9 +69,13 @@ nav a {
 }
 
 .btn {
+  height: 60px;
   padding: 20px 30px;
   border-radius: 15px;
   text-transform: uppercase;
+  background-color: var(--beige);
+  color: black;
+  text-decoration: none;
 }
 
 .btn-transition:active {
@@ -247,8 +274,6 @@ nav a {
   height: 100%;
   background-color: var(--beige);
 }
-
-
 
 /* END STYLES HISTORIA.HTML */
 
