@@ -146,7 +146,7 @@ nav {
 
 .footer {
   display: flex;
-  width: 100%;
+
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -168,7 +168,13 @@ nav {
 .footer-left p {
   font-weight: 700;
   text-transform: uppercase;
-  word-break: break-all;
+}
+
+@media (max-width: 726px) {
+  .boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* START STYLES HISTORIA.HTML */
@@ -206,7 +212,7 @@ nav {
 }
 
 .article-3 h2 {
-  width: 20%;
+  width: 30%;
 }
 
 .article-3 p {
@@ -216,14 +222,10 @@ nav {
 /* ESTILOS PARA EL ARTICLE DE VIDEO */
 
 .video-container {
-  /* display: flex; */
-  flex-direction: column;
   width: 50%;
   min-width: 700px;
   margin: 0 auto;
   margin-top: 100px;
-  justify-content: center;
-  align-items: center;
 }
 
 .video-container h2 {
@@ -275,6 +277,23 @@ nav {
   width: 0%;
   height: 100%;
   background-color: var(--beige);
+}
+
+@media (max-width: 900px) {
+  .article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .article p,
+  .article h2 {
+    width: 100%;
+  }
+  .article-2 h2 {
+    order: 0;
+  }
 }
 
 /* END STYLES HISTORIA.HTML */

@@ -41,8 +41,9 @@ playButton.addEventListener("click", () => {
 
 pauseButton.addEventListener("click", () => {
   video.pause();
-  clearInterval(intervalId);
 });
+
+
 
 video.addEventListener("timeupdate", () => {
   let tiempoActual = video.currentTime;
