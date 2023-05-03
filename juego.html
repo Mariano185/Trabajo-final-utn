@@ -61,17 +61,41 @@
       <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
       <article class="juego">
         <section class="boxes-game">
-          <div class="box-game">Arrastra y suelte la imagen aqui</div>
-          <div class="box-game">Arrastra y suelte la imagen aqui</div>
-          <div class="box-game">Arrastra y suelte la imagen aqui</div>
+          <div class="box-game" id="box-game-1">
+            Arrastra y suelte la imagen aqui
+          </div>
+          <div class="box-game" id="box-game-2">
+            Arrastra y suelte la imagen aqui
+          </div>
+          <div class="box-game" id="box-game-3">
+            Arrastra y suelte la imagen aqui
+          </div>
         </section>
-        <section class="pictures">
-          <img src="assets/images/Rompe3.png" alt="" class="picture" />
-          <img src="assets/images/rompe2.png" alt="" class="picture" />
-          <img src="assets/images/Rompe1.png" alt="" class="picture" />
+        <section class="pictures" id="pictures">
+          <img
+            src="assets/images/Rompe3.png"
+            alt=""
+            id="img-1"
+            class="picture"
+            draggable="true"
+          />
+          <img
+            src="assets/images/rompe2.png"
+            alt=""
+            id="img-2"
+            class="picture"
+            draggable="true"
+          />
+          <img
+            src="assets/images/Rompe1.png"
+            alt=""
+            id="img-3"
+            class="picture"
+            draggable="true"
+          />
         </section>
       </article>
-      <a href="#" class="reset btn-transition">Reiniciar</a>
+      <a href="#" class="reset btn-transition" id="reset">Reiniciar</a>
     </main>
     <footer class="footer">
       <div class="footer-left">
@@ -82,5 +106,6 @@
         <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
       </div>
     </footer>
+    <script src="scriptJuego.js"></script>
   </body>
 </html>
